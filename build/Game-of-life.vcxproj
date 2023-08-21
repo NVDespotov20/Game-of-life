@@ -145,11 +145,13 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cell.hpp" />
     <ClInclude Include="Draw.hpp" />
     <ClInclude Include="Input.hpp" />
     <ClInclude Include="main.hpp" />

@@ -1,9 +1,10 @@
 #include "Draw.hpp"
+#include "Cell.hpp"
 
 void draw() {
 	win->clear(sf::Color::Black);
 	win->setView(cam);
-
-	win->draw(circle);
+	for (Cell& cell : cells)
+		cell.draw();
 	win->display();
 }
