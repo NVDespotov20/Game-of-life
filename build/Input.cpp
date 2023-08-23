@@ -1,13 +1,10 @@
 #include "Input.hpp"
 #include <algorithm>
 #include "Cell.hpp"
+#include "Update.hpp"
 sf::Clock clickTime;
 void input(sf::Event& e)
 {
-	if (e.type == sf::Event::MouseMoved){
-		auto coords = win->mapPixelToCoords(sf::Mouse::getPosition(*win));
-		printf("Mouse: %f, %f\n", coords.x, coords.y);
-	}
 
 	if (e.type == sf::Event::Closed)
 		win->close();
@@ -47,5 +44,10 @@ void input(sf::Event& e)
 	else if (e.type == sf::Event::MouseWheelMoved && e.mouseWheel.delta == 1) {
 		cam.setSize(cam.getSize() * .9f);
 		sens *= .9f;
+	}
+
+	if (e.type == sf::Event::KeyPressed && e.key.code == sf::Keyboard::Space)
+	{
+		update();
 	}
 }

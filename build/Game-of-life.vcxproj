@@ -149,12 +149,14 @@
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.hpp" />
     <ClInclude Include="Draw.hpp" />
     <ClInclude Include="Input.hpp" />
     <ClInclude Include="main.hpp" />
+    <ClInclude Include="Update.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
